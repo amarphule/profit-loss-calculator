@@ -1,0 +1,43 @@
+:root {
+  --body-bg: rgb(240, 207, 203);
+  --input-bg: rgb(228, 174, 165);
+  --btn-bg: rgb(114, 49, 49);
+}
+body {
+  text-align: center;
+  background-color: var(--body-bg);
+}
+h1 {
+  margin: 2rem;
+}
+label {
+  display: block;
+  font-size: 1.5rem;
+}
+.stocks {
+  outline: var(--body-bg);
+  max-width: 500px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--input-bg);
+  width: 100%;
+  border: 1px solid var(--btn-bg);
+  border-radius: 1rem;
+  margin-bottom: 30px;
+}
+
+#submit {
+  background: var(--btn-bg);
+  color: var(--body-bg);
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 25px;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+#result {
+  font-size: xx-large;
+}
