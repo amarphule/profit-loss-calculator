@@ -1,7 +1,7 @@
 :root {
-  --body-bg: rgb(240, 207, 203);
-  --input-bg: rgb(228, 174, 165);
-  --btn-bg: rgb(114, 49, 49);
+  --body-bg: rgb(250, 242, 241);
+  --input-bg: rgb(221, 191, 186);
+  --btn-bg: rgb(114, 84, 49);
 }
 body {
   text-align: center;
