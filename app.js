@@ -9,24 +9,24 @@ function message(msg) {
 }
 
 function checkProfitLoss() {
-    const intial = initialPrice.value;
-    const quantity = stockQuantity.value;
-    const current = currentPrice.value;
+    result.style.color = "black"
+    const intial = Number(initialPrice.value);
+    const quantity = Number(stockQuantity.value);
+    const current = Number(currentPrice.value)
 
     if (intial > 0 && quantity > 0 && current > 0) {
         if (current > intial) {
             const profit = (current - intial) * quantity
-
             const profitPercent = (profit / intial) * 100
             result.style.color = "green"
-            let output = `Hey, the profit is ${profit} and the percent is ${profitPercent.toFixed(2)}%`
+            let output = `Hey, the profit is ${profit} and the percentage is ${profitPercent.toFixed(2)}% 💵 💵 💵 `
             message(output)
 
         } else if (intial > current) {
-            const loss = intial - current
-            const lossPercent = ((loss / intial) * 100) * quantity
+            const loss = (intial - current) * quantity
+            const lossPercent = (loss / intial) * 100
             result.style.color = "red"
-            let output = `Hey, the loss is ${loss} and the percent is -${lossPercent.toFixed(2)}%`
+            let output = `Hey, the loss is ${loss} and the percentage is ${lossPercent.toFixed(2)}%`
             message(output)
 
         } else {
