@@ -16,14 +16,14 @@ function checkProfitLoss() {
 
     if (intial > 0 && quantity > 0 && current > 0) {
         if (current > intial) {
-            const profit = (current - intial) * quantity
+            const profit = (current - intial)
             const profitPercent = (profit / intial) * 100
             result.style.color = "green"
             let output = `Hey, the profit is ${profit} and the percentage is ${profitPercent.toFixed(2)}% 💵 💵 💵 `
             message(output)
 
         } else if (intial > current) {
-            const loss = (intial - current) * quantity
+            const loss = (intial - current)
             const lossPercent = (loss / intial) * 100
             result.style.color = "red"
             let output = `Hey, the loss is ${loss} and the percentage is ${lossPercent.toFixed(2)}%`
